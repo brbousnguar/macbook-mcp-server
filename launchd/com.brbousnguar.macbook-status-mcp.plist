@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>com.brbousnguar.macbook-status-mcp</string>
+
+    <key>ProgramArguments</key>
+    <array>
+      <string>/usr/local/bin/python3</string>
+      <string>-m</string>
+      <string>macbook_status_mcp.server</string>
+    </array>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+      <key>PYTHONPATH</key>
+      <string>/Users/brbousnguar/Documents/Projects/Perso/mcp-macbook-settings/src</string>
+      <key>MCP_HOST</key>
+      <string>127.0.0.1</string>
+      <key>MCP_PORT</key>
+      <string>8765</string>
+      <key>MCP_SERVER_NAME</key>
+      <string>MacBook Status</string>
+      <key>MCP_EXTERNAL_BASE_URL</key>
+      <string>http://127.0.0.1:8765</string>
+    </dict>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/brbousnguar/Documents/Projects/Perso/mcp-macbook-settings</string>
+
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/macbook-status-mcp.log</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/macbook-status-mcp.err.log</string>
+  </dict>
+</plist>

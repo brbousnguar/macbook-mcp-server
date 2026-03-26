@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "macbook-status-mcp"
+version = "0.1.0"
+description = "MCP server exposing MacBook resource usage metrics over HTTP."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "mcp[cli]>=1.0.0",
+  "psutil>=5.9.8",
+]
+
+[project.scripts]
+macbook-status-mcp = "macbook_status_mcp.server:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
