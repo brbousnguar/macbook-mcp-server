@@ -1,13 +1,13 @@
 {
   "mcpServers": {
     "macbook-status": {
-      "command": "/Users/brbousnguar/Documents/Projects/Perso/mcp-macbook-settings/.venv/bin/python",
+      "command": "/path/to/macbook-mcp-server/.venv/bin/python",
       "args": [
         "-m",
         "macbook_status_mcp.server"
       ],
       "env": {
-        "PYTHONPATH": "/Users/brbousnguar/Documents/Projects/Perso/mcp-macbook-settings/src",
+        "PYTHONPATH": "/path/to/macbook-mcp-server/src",
         "MCP_TRANSPORT": "stdio",
         "MCP_SERVER_NAME": "MacBook Status"
       }
