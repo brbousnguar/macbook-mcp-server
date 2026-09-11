@@ -15,7 +15,7 @@
     <key>EnvironmentVariables</key>
     <dict>
       <key>PYTHONPATH</key>
-      <string>/Users/brbousnguar/Documents/Projects/Perso/mcp-macbook-settings/src</string>
+      <string>/path/to/macbook-mcp-server/src</string>
       <key>MCP_HOST</key>
       <string>127.0.0.1</string>
       <key>MCP_PORT</key>
@@ -27,7 +27,7 @@
     </dict>
 
     <key>WorkingDirectory</key>
-    <string>/Users/brbousnguar/Documents/Projects/Perso/mcp-macbook-settings</string>
+    <string>/path/to/macbook-mcp-server</string>
 
     <key>RunAtLoad</key>
     <true/>
